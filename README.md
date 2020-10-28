@@ -1,4 +1,4 @@
-# wordplay
+# wordgame
 
 site on go + react    
   
