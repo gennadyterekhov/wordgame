@@ -4,18 +4,35 @@ import (
 	"net/http"
 )
 
-func Index(w http.ResponseWriter, req *http.Request) {
+type staticPart struct {
+	Header string
+	footer string
+}
+
+// func prepareStaticPart() staticPart {
+// 	var headerHtml string = prepare("header")
+// 	var footerHtml string = prepare("footer")
+
+// 	var context = staticPart {
+// 		Header string
+// 		Footer string
+// 	}{
+// 		headerHtml,
+// 		footerHtml,
+// 	}
+// 	return context
+// }
+
+func IndexPage(w http.ResponseWriter, req *http.Request) {
 	render(w, "index", struct{}{})
 }
 
-func ReactPage(w http.ResponseWriter, req *http.Request) {
-	render(w, "reactPage", struct{}{})
-}
+func TemplateTestPage(w http.ResponseWriter, req *http.Request) {
 
-func TemplateTest(w http.ResponseWriter, req *http.Request) {
 	render(w, "templateTest", struct{}{})
 }
 
-func BootstrapTemplate(w http.ResponseWriter, req *http.Request) {
-	render(w, "template", struct{}{})
+func PlayPage(w http.ResponseWriter, req *http.Request) {
+
+	render(w, "play", struct{}{})
 }

@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>template</title>
-	</head>
-	<body>
-		<h1>this is template test page</h1>
+
+{{define "templateTest"}}
+{{template "header"}}
+{{template "navigation"}}
+
+{{template "contentStart"}}
+
+asdfasdfasdf
 
 
+{{template "contentEnd"}}
+{{template "footer"}}
 
-		<a href="/">link to index</a>
-		<hr>
-
-
-	</body>
-</html>
+{{end}}

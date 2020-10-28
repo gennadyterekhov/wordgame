@@ -1,4 +1,4 @@
-module portfolio
+module wordgame
 
 go 1.15
 

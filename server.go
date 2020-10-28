@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"portfolio/router"
+	"wordgame/router"
 
 	"github.com/joho/godotenv"
 )
