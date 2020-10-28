@@ -52,8 +52,8 @@ func render(w http.ResponseWriter, templateName string, context struct{}) {
 	templateSetObj, err := template.ParseFiles(
 		// "/home/gena/go/src/wordgame/views/html/templates/header.html",
 		// "/home/gena/go/src/wordgame/views/html/templates/footer.html",
-		"/home/gena/go/src/wordgame/views/html/templates/template.html",
-		"/home/gena/go/src/wordgame/views/html/"+templateName+".html",
+		"views/html/templates/template.html",
+		"views/html/"+templateName+".html",
 	)
 	helper.Check(err)
 	err = templateSetObj.ExecuteTemplate(w, templateName, context)
